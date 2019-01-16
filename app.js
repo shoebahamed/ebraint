@@ -60,7 +60,7 @@ app.use(session({
   key: process.env.KEY,
   resave: false,
   saveUninitialized: false,
-  store: new MongoStore({ mongooseConnection: mongoose.connection })
+//  store: new MongoStore({ mongooseConnection: mongoose.connection })
 }));
 
 // // Passport JS is what we use to handle our logins
