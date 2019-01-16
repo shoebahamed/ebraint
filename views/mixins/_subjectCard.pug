@@ -1,0 +1,11 @@
+mixin subjectCard(subject={})
+  .store
+    .store__hero
+      .store__actions
+          .store__action.store__action--edit
+              a(href=`/subject/${subject.name}/edit`)
+                !=h.icon('pencil')
+      img(src=`/uploads/${subject.photo||'store.png'}`
+      )
+      h2.title
+        a(href=`/subjects/${subject.name}`) #{subject.name}

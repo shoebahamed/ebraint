@@ -1,0 +1,9 @@
+extends layout
+include mixins/_subjectCard
+
+block content
+  .inner
+    h1=title
+    .stores
+      each subject in subjects
+        +subjectCard(subject)
